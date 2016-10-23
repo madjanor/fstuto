@@ -41,7 +41,10 @@
         var itemsToBuy = [
           { name: "cookies", quantity: 10 },
           { name: "chips", quantity: 5 },
-          { name: "soda", quantity: 10 }
+          { name: "soda", quantity: 10 },
+          { name: "Pizza", quantity: 3 },
+          { name: "Icecream", quantity: 60 },
+          { name: "Salade", quantity: 2 }
         ];
         var itemsBought = [];
 
@@ -57,8 +60,8 @@
           var elm = itemsToBuy[indx];
           itemsToBuy.splice(indx, 1) ;
           itemsBought.push(elm);
-          console.log("bought : ",itemsBought );
-          console.log("tobuy : ",itemsToBuy );
+          //console.log("bought : ",itemsBought );
+          //console.log("tobuy : ",itemsToBuy );
         }
   };
 
