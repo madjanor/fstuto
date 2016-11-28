@@ -20,22 +20,6 @@
     </div>
   </div>
 
-<!--
-    <div class=row ng-repeat="menu in ctrl.found">
-
-      <div class="col-md-8">
-          {{menu.name}} , {{menu.short_name}}, {{menu.description}}
-      </div>
-      <div class="col-md-4">
-        <button class="btn btn-warning" ng-click="ctrl.removeAction($index)">Don't want this one!</button>
-      </div>
-
-    </div>
-    <div class="span12 pagination-centered" ng-if="ctrl.message.length > 0">
-      <h2 class="error">{{ctrl.message}}</h2>
-    </div>
-  -->
-
     <!-- found-items should be implemented as a component -->
     <found-items dir-found="ctrl.found" on-remove="ctrl.removeAction(idx)" msg="ctrl.message"></found-items>
   </div>
