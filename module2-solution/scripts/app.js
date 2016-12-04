@@ -65,4 +65,15 @@
         }
   };
 
+  function AsyncFunction(){
+    var defered =$q.defer();
+    if(true){
+      var p={name:"maurice", age:30};
+      defered.resolve(p);
+    }else{
+      defered.reject("No person found");
+    }
+    return defered.promise;
+  };
+
 })();

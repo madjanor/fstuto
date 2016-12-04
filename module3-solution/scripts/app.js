@@ -15,7 +15,7 @@
       ctrl.narrowItAction = function(){
         var prom = MenuSearchService.getMatchedMenuItems(ctrl.searchTerm );
         prom.then(function(result){
-          console.log("Success case ", result);
+          //console.log("Success case ", result);
           ctrl.found=result;
           if(ctrl.found.length <= 1) ctrl.message= "Nothing found";
           else ctrl.message= "";
@@ -42,7 +42,7 @@
       return $http({url:menuItemUrl})
       .then(function (result) {
         // process result and only keep items that match
-        console.log("http call result", result);
+        //console.log("http call result", result);
         var jsonData = result.data;
         var foundItems = [];
         if(searchTerm != null && searchTerm.length >0){
