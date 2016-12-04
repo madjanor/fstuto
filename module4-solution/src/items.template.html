@@ -1,0 +1,18 @@
+<a ui-sref="home">Back to Home</a> <a ui-sref="categories">Back to Categories</a>
+<h2>Items available in selected category</h2>
+<table ng-if="$ctrl.itemDataArray.length >0" class="table table-hover table-striped">
+  <thead>
+    <tr>
+      <th>Short Name</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="it in $ctrl.itemDataArray">
+      <td>{{it.short_name}} </td>
+      <td>{{it.name}}</td>
+      <td>{{it.description}}</td>
+    </tr>
+  </tbody>
+</table>

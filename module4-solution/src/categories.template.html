@@ -1,0 +1,6 @@
+<h2>Category of menu</h2>
+<ol>
+  <li ng-repeat="cat in $ctrl.categoryDataArray"> {{cat.short_name}} -
+    <a ui-sref="items({ shortname: cat.short_name })">{{cat.name}}</a>
+  </li>
+</ol>
