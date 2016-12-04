@@ -8,12 +8,12 @@ RoutesConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
 function RoutesConfig($stateProvider, $urlRouterProvider) {
 
   // Redirect to tab 1 if no other URL matches
-  $urlRouterProvider.otherwise('/home');
+  $urlRouterProvider.otherwise('/');
 
   // Set up UI states
   $stateProvider
     .state('home', {
-      url: '/home',
+      url: '/',
       templateUrl: 'src/home.html'
     })
 
@@ -54,7 +54,7 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
         this.itemsResolved = itemsResolved;
       },
       controllerAs: 'ctrlIt'
- 
+
     });
 }
 
