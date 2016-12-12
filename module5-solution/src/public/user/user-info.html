@@ -1,0 +1,21 @@
+<h1 style="margin: 0 auto; float:none;text-align:center"> Current User Information</h1>
+<br/>
+<div class="container" >
+
+  <div class="row" ng-if="infoCtrl.dish != null">
+    First Name : {{infoCtrl.user.firstname}}<br/>
+    Last Name : {{infoCtrl.user.lastname}}<br/>
+    Email : {{infoCtrl.user.email}}<br/>
+    Address: {{infoCtrl.user.address}}<br/>
+    Telephone: {{infoCtrl.user.phone}}<br/>
+  </div>
+  <br/>
+  <div class="row" ng-if="infoCtrl.dish != null">
+    <h1 style="margin: 0 auto; float:none;text-align:center"> Favorite Dish </h1>
+    <br/>
+    <menu-item menu-item="infoCtrl.dish" ></menu-item>
+  </div>
+  <div class="row" style="margin: 0 auto; float:none;text-align:center" ng-if="infoCtrl.dish == null">
+    Not Signed Up Yet. <a ui-sref="public.signup" > Sign up Now! </a>
+  </div>
+</div>
